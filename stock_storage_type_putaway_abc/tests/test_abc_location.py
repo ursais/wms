@@ -1,10 +1,10 @@
 # Copyright 2019-2021 Camptocamp SA
 # Copyright 2019-2021 Jacques-Etienne Baudoux (BCIM) <je@bcim.be>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl)
-from odoo.tests import SavepointCase
+from odoo.tests.common import TransactionCase
 
 
-class TestAbcLocation(SavepointCase):
+class TestAbcLocation(TransactionCase):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
